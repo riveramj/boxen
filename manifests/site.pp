@@ -57,6 +57,10 @@ node default {
   include git
   include hub
   include nginx
+  include snzip
+  include rabbitmq
+  include git-flow-avh
+  include curl
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -91,4 +95,14 @@ node default {
 
   include java
   include flowdock
+  include iterm2::stable
+  include iterm2::colors::solarized_light
+  include iterm2::colors::solarized_dark
+  include iterm2::colors::arthur
+  include tunnelblick
+  include github_for_mac
+  include firefox
+  include chrome
+  include skype
+  include flux
 }
