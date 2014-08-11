@@ -78,14 +78,14 @@ node default {
 
   ruby_gem { "compass for 2.0.0":
     gem     => 'compass',
-    ruby    => '2.0.0',
-    version => '1.0.0.alpha.19'
+    ruby_version => '2.0.0',
+    version => '1.0.0.alpha.19',
   }
 
   ruby_gem { "sass for 2.0.0":
-    gem     => 'sass',
-    ruby    => '2.0.0',
-    version => ' 3.3.4'
+    gem => 'sass',
+    ruby_version => '2.0.0',
+    version => ' 3.3.4',
   }
 
   # common, useful packages
