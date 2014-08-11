@@ -57,10 +57,6 @@ node default {
   include git
   include hub
   include nginx
-  include snzip
-  include rabbitmq
-  include git-flow-avh
-  include curl
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -84,7 +80,11 @@ node default {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'snzip',
+      'rabbitmq',
+      'git-flow-avh',
+      'curl'
     ]:
   }
 

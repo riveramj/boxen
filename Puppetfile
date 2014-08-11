@@ -62,4 +62,10 @@ github "xquartz",     "1.1.1"
 
 github "flowdock",    "1.0.0"
 github "java",        "1.6.0"
-
+github "iterm2"
+github "tunnelblick"
+github "github_for_mac"
+github "firefox"
+github "chrome"
+github "skype"
+github "flux"
