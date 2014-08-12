@@ -64,27 +64,24 @@ node default {
   }
 
   # node versions
-  include nodejs::v0_10
+  include nodejs::v0_10_29
 
   nodejs::module { 'coffee-script':
-    node_version => 'v0.10'
+    node_version => 'v0.10.29'
   }
 
   # default ruby versions
-  ruby::version { '2.0.0': }
-  ruby::version { '2.1.0': }
-  ruby::version { '2.1.1': }
-  ruby::version { '2.1.2': }
+  ruby::version { '2.0.0p451': }
 
   ruby_gem { "compass for 2.0.0":
     gem     => 'compass',
-    ruby_version => '2.0.0',
+    ruby_version => '*',
     version => '1.0.0.alpha.19',
   }
 
   ruby_gem { "sass for 2.0.0":
     gem => 'sass',
-    ruby_version => '2.0.0',
+    ruby_version => '*',
     version => ' 3.3.4',
   }
 
