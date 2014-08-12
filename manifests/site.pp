@@ -71,7 +71,9 @@ node default {
   }
 
   # default ruby versions
-  ruby::version { '2.0.0-p451': }
+  class { 'ruby::global':
+  version => '2.0.0-p451'
+}
 
   ruby_gem { "compass for 2.0.0-p451":
     gem     => 'compass',
