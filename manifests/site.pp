@@ -73,15 +73,15 @@ node default {
   # default ruby versions
   ruby::version { '2.0.0p451': }
 
-  ruby_gem { "compass for 2.0.0":
+  ruby_gem { "compass for 2.0.0p451":
     gem     => 'compass',
-    ruby_version => '*',
+    ruby_version => '2.0.0p451',
     version => '1.0.0.alpha.19',
   }
 
-  ruby_gem { "sass for 2.0.0":
+  ruby_gem { "sass for 2.0.0p451":
     gem => 'sass',
-    ruby_version => '*',
+    ruby_version => '2.0.0p451',
     version => ' 3.3.4',
   }
 
