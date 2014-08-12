@@ -75,9 +75,6 @@ node default {
     version => '2.0.0-p451'
   }
 
-  # install a ruby version
-  ruby::version { '2.0.0-p451': }
-
   ruby_gem { "compass for 2.0.0-p451":
     gem     => 'compass',
     ruby_version => '2.0.0-p451',
