@@ -9,6 +9,11 @@ GITHUBTARBALL
     boxen (3.6.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-caffeine
+  specs:
+    caffeine (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-chrome
   specs:
     chrome (1.1.2)
@@ -17,6 +22,11 @@ GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-emacs
+  specs:
+    emacs (1.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-firefox
@@ -67,6 +77,11 @@ GITHUBTARBALL
   remote: boxen/puppet-gpgtools
   specs:
     gpgtools (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-intellij
+  specs:
+    intellij (1.5.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
@@ -124,6 +139,11 @@ GITHUBTARBALL
     skype (1.0.8)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sourcetree
+  specs:
+    sourcetree (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-sublime_text
   specs:
     sublime_text (1.0.1)
@@ -171,8 +191,10 @@ GITHUBTARBALL
 DEPENDENCIES
   alfred (>= 0)
   boxen (= 3.6.2)
+  caffeine (>= 0)
   chrome (>= 0)
   dnsmasq (= 1.0.1)
+  emacs (>= 0)
   firefox (>= 0)
   fish (>= 0)
   flowdock (= 1.0.0)
@@ -185,6 +207,7 @@ DEPENDENCIES
   gpgtools (>= 0)
   homebrew (= 1.9.6)
   inifile (= 1.1.1)
+  intellij (>= 0)
   iterm2 (>= 0)
   java (= 1.6.0)
   module_data (= 0.0.3)
@@ -197,6 +220,7 @@ DEPENDENCIES
   repository (= 2.3.0)
   ruby (= 8.1.2)
   skype (>= 0)
+  sourcetree (>= 0)
   stdlib (= 4.2.1)
   sublime_text (>= 0)
   sudo (= 1.0.0)
