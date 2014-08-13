@@ -54,6 +54,12 @@ repository { "${srcdir}/mercury" :
   provider => 'git',
 }
 
+repository { "${srcdir}/chef-repo" :
+  source   => 'https://github.com/elemica/chef-repo.git',
+  path     => "${srcdir}/chef-repo",
+  provider => 'git',
+}
+
 Service {
   provider => ghlaunchd
 }
