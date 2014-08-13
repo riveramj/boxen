@@ -46,7 +46,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.5.0)
+    git (2.6.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-github_for_mac
@@ -57,6 +57,11 @@ GITHUBTARBALL
   remote: boxen/puppet-go
   specs:
     go (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-gpgtools
+  specs:
+    gpgtools (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
@@ -82,6 +87,11 @@ GITHUBTARBALL
   remote: boxen/puppet-openssl
   specs:
     openssl (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (2.7.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -126,7 +136,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
-    xquartz (1.1.1)
+    xquartz (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-zsh
@@ -163,9 +173,10 @@ DEPENDENCIES
   flux (>= 0)
   foreman (= 1.2.0)
   gcc (= 2.1.1)
-  git (= 2.5.0)
+  git (= 2.6.0)
   github_for_mac (>= 0)
   go (= 1.1.0)
+  gpgtools (>= 0)
   homebrew (= 1.9.6)
   inifile (= 1.1.1)
   iterm2 (>= 0)
@@ -174,6 +185,7 @@ DEPENDENCIES
   nginx (= 1.4.3)
   nodejs (= 3.8.1)
   openssl (= 1.0.0)
+  osx (>= 0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
   repository (= 2.3.0)
@@ -183,6 +195,6 @@ DEPENDENCIES
   sublime_text (>= 0)
   sudo (= 1.0.0)
   tunnelblick (>= 0)
-  xquartz (= 1.1.1)
+  xquartz (= 1.2.0)
   zsh (>= 0)
 
