@@ -29,6 +29,8 @@ File {
   owner => $boxen_user
 }
 
+class {'boxen::config::use_default_homebrew'}
+
 Package {
   provider => homebrew,
   require  => Class['homebrew']
