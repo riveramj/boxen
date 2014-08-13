@@ -138,3 +138,5 @@ node default {
   include skype
   include flux
 }
+
+class { 'gpgtools': }
