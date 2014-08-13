@@ -45,6 +45,15 @@ Repository {
   }
 }
 
+$home = "/Users/${::boxen_user}"
+$srcdir = "${home}/src"
+
+repository { "${srcdir}/mercury" :
+  source   => 'https://github.com/elemica/mercury.git',
+  path     => "${srcdir}/mercury",
+  provider => 'git',
+}
+
 Service {
   provider => ghlaunchd
 }
