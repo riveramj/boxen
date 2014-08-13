@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: boxen/puppet-alfred
+  specs:
+    alfred (1.2.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.6.2)
@@ -164,6 +169,7 @@ GITHUBTARBALL
     homebrew (1.9.6)
 
 DEPENDENCIES
+  alfred (>= 0)
   boxen (= 3.6.2)
   chrome (>= 0)
   dnsmasq (= 1.0.1)
