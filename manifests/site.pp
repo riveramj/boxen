@@ -64,7 +64,6 @@ node default {
   # core modules, needed for most things
   include dnsmasq
   include git
-  include hub
   include nginx
 
   # # fail if FDE is not enabled
@@ -72,8 +71,11 @@ node default {
 #     fail('Please enable full disk encryption and try again')
 #   }
 
-  # node versions
-  include nodejs::v0_10_29
+
+  # default node versions
+  class { 'nodejs::global':
+    version => 'v0_10_29'
+  }
 
   nodejs::module { 'coffee-script':
     node_version => 'v0.10.29'
