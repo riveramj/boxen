@@ -74,7 +74,7 @@ node default {
 
   # default node versions
   class { 'nodejs::global':
-    version => 'v0_10_29'
+    version => 'v0.10.29'
   }
 
   nodejs::module { 'coffee-script':
