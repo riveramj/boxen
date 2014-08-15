@@ -68,9 +68,7 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  include dnsmasq
   include git
-  include nginx
 
   # # fail if FDE is not enabled
 #   if $::root_encrypted == 'no' {
