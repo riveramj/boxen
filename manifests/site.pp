@@ -89,21 +89,18 @@ node default {
 
   # default ruby versions
   class { 'ruby::global':
-    version => '2.0.0-p451'
+    version => '2.1.2'
   }
 
-  # install a ruby version
-  ruby::version { '2.0.0': }
-
-  ruby_gem { "compass for 2.0.0-p451":
+  ruby_gem { "compass for 2.1.2":
     gem     => 'compass',
-    ruby_version => '2.0.0-p451',
+    ruby_version => '2.1.2',
     version => '1.0.0.alpha.19',
   }
 
-  ruby_gem { "sass for 2.0.0-p451":
+  ruby_gem { "sass for 2.1.2":
     gem => 'sass',
-    ruby_version => '2.0.0-p451',
+    ruby_version => '2.1.2',
     version => ' 3.3.4',
   }
 
