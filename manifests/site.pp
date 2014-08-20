@@ -90,8 +90,6 @@ node default {
     version => '2.1.2'
   }
 
-  ruby::version { '2.1.2': }
-
   ruby_gem { "compass for 2.1.2":
     gem     => 'compass',
     ruby_version => '2.1.2',
