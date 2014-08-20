@@ -59,7 +59,7 @@ github "xquartz",     "1.2.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-github "flowdock",    "1.0.0"
+github "flowdock"
 github "java",        "1.6.0"
 github "iterm2"
 github "tunnelblick"

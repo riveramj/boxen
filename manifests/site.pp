@@ -48,13 +48,13 @@ Repository {
 $home = "/Users/${::boxen_user}"
 $srcdir = "${home}/src"
 
-repository { "${srcdir}/mercury" :
+repository { "${srcdir}/elemica/mercury" :
   source   => 'https://github.com/elemica/mercury.git',
   path     => "${srcdir}/mercury",
   provider => 'git',
 }
 
-repository { "${srcdir}/chef-repo" :
+repository { "${srcdir}/elemica/chef-repo" :
   source   => 'https://github.com/elemica/chef-repo.git',
   path     => "${srcdir}/chef-repo",
   provider => 'git',
@@ -90,6 +90,8 @@ node default {
     version => '2.1.2'
   }
 
+  ruby::version { '2.1.2': }
+
   ruby_gem { "compass for 2.1.2":
     gem     => 'compass',
     ruby_version => '2.1.2',
@@ -123,9 +125,6 @@ node default {
   include java
   include flowdock
   include iterm2::stable
-  include iterm2::colors::solarized_light
-  include iterm2::colors::solarized_dark
-  include iterm2::colors::arthur
   include tunnelblick
   include github_for_mac
   include firefox
